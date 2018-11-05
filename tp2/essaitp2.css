@@ -1,0 +1,48 @@
+
+
+p [type="button"] {
+    text-align: left;
+   margin-left: 19.5%;
+  
+  } 
+
+ body{
+    background-color: #e9ebee;              
+    max-width: 800px;              
+}
+
+
+/*fieldset {margin-bottom: 15px;
+padding: 10px; 
+background: rgb(245, 196, 196)}*/
+
+fieldset {width: 80%;
+    margin-left: 10%;
+   background: white; 
+       padding: 1px;
+      border: 2px solid white;
+  font-family: verdana;
+  font-size: 11px; }
+
+h1{ margin-left: 10%;}
+
+ input:focus,textarea {
+ background: rgb(218, 220, 221) ; 
+ font: 1em sans-serif
+ 
+          }
+ 
+          
+
+label {
+width: 110px;
+display: inline-block;
+text-align: left;
+margin: 6px; } 
+
+div{
+     background-color: rgba(241, 183, 232, 0.911);
+    padding: 5px;
+    border: 1px;
+    border-color: black;}
+  

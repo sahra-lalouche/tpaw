@@ -1,33 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP2</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+  <meta charset="utf-8" />
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+  <link rel="stylesheet" href="essai2tp2.css" />
+  <title>TP2</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script type="text/javascript" src="formulaire.js"></script>
+
+</head>
+
+<body>
+
+  <h1>Saisie d'une fiche "Personne"</h1>
+  <form>
+    <fieldset id="section-1">
+
+      <label for="titre">Titre </label>
+      <select name="titre">
+        <option value="Mme" selected="selected">Madame</option>
+        <option value="Mlle">Mademoiselle</option>
+        <option value="Mr">Monsieur</option>
+      </select> <br />
+
+      <label for="nom">Nom</label>
+      <input type="text" name="nom" id="nom" placeholder="ex: lalouche " autofocus  minlength="5" maxlength="20"><br />
+      <!--autofocus pour pointer automatiquement le curseur sur la zone nom
+e required pour que le champ soit obligatoire-->
+      <label for="prenom">Prénom </label>
+      <input type="text" name="prenom" id="prenom" placeholder="ex: sahra" minlength="5" maxlength="20"><br>
+
+
+      <label for="date">Date de naissance </label>
+      <input type="date" name="date" id="date" placeholder=" jj/mm/aaa "><br>
+
+      <label for="adress">Adresse</label>
+      <input type="adress" name="adress" id="adress" placeholder="93600, sevran" minlength="5" maxlength="50"><br>
+
+      <label for="mail">Email </label>
+      <input type="email" name="mail" id="mail" placeholder="ex: prenom.nom@polytechnique.edu" minlength="5" maxlength="30"><br>
+
+      <input type="button" value="Valider" onclick="validation()"><br>
+
+
+    </fieldset>
+  </form>
+  <fieldset id="section-2">
+    <div id="error"> </div>
+  </fieldset>
+
+  <fieldset id="section-3">
+    <div id="resultat"> </div>
+  </fieldset>
+
+
+
+</body>
+
 </html>
