@@ -1,0 +1,60 @@
+
+
+input[type="button"] {
+    text-align: left;
+   margin-left: 16%;
+  
+  } 
+
+ body{ 
+    font-size: 16px;
+    font-family: Verdana sans-serif ;
+    background-color: rgb(197, 194, 194);           
+}
+#section-1 {
+   max-width: 500px;
+    background-color: white;
+padding: 20px;
+margin: 20px  250px;
+}
+#section-2 { 
+   /* margin-left: 20%;*/
+    background-color: rgb(247, 195, 252);
+    padding: 10px;
+    margin: 0px 250px;
+    width: 520px;
+}
+
+    #section-3 {
+        display: none;
+        background-color: rgb(44, 161, 34);
+        padding: 10px;
+        margin: 0px  250px;
+        width: 520px;
+    }
+    
+
+
+h1{ margin-left: 20%;}
+
+ input:focus,   {
+ background: rgb(202, 221, 233) ; 
+ font: 1em sans-serif;
+}
+
+label {/*concernant les champs a remplir*/
+width: 110px;
+display: inline-block;
+text-align: left;
+margin: 6px; } 
+
+/*div [id ="error"] { 
+    background-color: rgba(248, 140, 225, 0.822);
+    padding: 5px;
+    border: 1px solid black ; }
+   
+    div [id="resultat"] { 
+        background-color: rgba(163, 250, 167, 0.822);
+        padding: 5px;
+        /*border: 1px solid black;*/ 
+      /*  :required{ background-color: brown}*/
